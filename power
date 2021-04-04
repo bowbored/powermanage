@@ -1,0 +1,15 @@
+#!/bin/bash
+
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+echo -e "Do you want to [${YELLOW}P${NC}]oweroff, [${YELLOW}R${NC}]eboot or [${YELLOW}H${NC}]ibernate?"
+
+read -n1 -p "[p,r,h]:" doit 
+case $doit in  
+  p|P) sudo poweroff ;; 
+  r|R) sudo reboot ;;
+  h|H) sudo hibernate-ram && pkill -g 31494;;
+  *) echo ' /Unknown Input\ ' && power ;; 
+esac
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+urxvt -g 52x10 -title PowerMenu -e power
+
