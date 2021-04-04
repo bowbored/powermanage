@@ -6,6 +6,15 @@ if you want to power off, reboot or hibernate.
 
 ![Example Image of the menu](https://raw.githubusercontent.com/bowbored/powermanage/main/powermenu.jpg)
 
+# Dependencies
+
+You will need hibernate-script and urxvt.
+You can install it with these commands on gentoo:
+```
+sudo emerge --ask sys-power/hibernate-script
+sudo emerge --ask x11-terms/rxvt-unicode
+```
+
 # How to use it
 
 Both Files (power and powermanage) have to be executable.
